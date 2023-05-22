@@ -1,0 +1,256 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --link-color: #597DB3;
+    --link-color-hover: #BD1D00;
+    --link-border-color: rgb(51 111 238 / 20%);
+    --link-hover-border-color: rgb(189 29 0 / 10%);
+    --text-color-primary: #333333;
+    --text-color-secondary: #808C9E;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.subheading {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--text-color-primary);
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: var(--link-color);
+    padding-bottom: 2px;
+    background-image: linear-gradient(var(--link-border-color), var(--link-border-color));
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 1px;
+}
+
+.link:hover {
+    color: var(--link-color-hover);
+    background-image: linear-gradient(var(--link-hover-border-color), var(--link-hover-border-color));
+}
+
+.paragraph {
+    color: var(--text-color-primary);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+article {
+    min-width: 240px;
+    max-width: 688px;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: #DCE2E8;
+    padding: 48px;
+}
+
+.margin-top {
+    margin-top: 48px;
+}
+
+header {
+    display: flex;
+}
+
+.circle {
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    background-color: #F1F3F5;
+}
+
+header .highlight {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--text-color-primary);
+    background-color: #FFDD2D;
+    padding: 4px 10px 6px 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.secondary-text {
+    color: var(--text-color-secondary);
+}
+
+.tags {
+    display: inline-flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.tag {
+    background-color: #F1F3F5;
+    color: var(--text-color-secondary);
+}
+
+.tag:hover {
+    color: var(--text-color-primary);
+}
+
+.subheading .arrow {
+    vertical-align: middle;
+}
+
+.lead-expert {
+    display: flex;
+    align-items: center;
+    max-width: 288px;
+    margin-top: 28px;
+}
+
+.lead-expert img {
+    margin-right: 16px;
+}
+
+.article-footer .lead-expert__description {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.lead-expert__name,
+.article-footer .link,
+.author .editor {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+@media (min-width: 1280px) {
+
+    article {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 200px;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    html {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 12px;
+        margin-bottom: 28px;
+    }
+
+    header .highlight {
+        padding: 2px 10px 4px 10px;
+    }
+
+    article {
+        margin: 80px;
+    }
+
+    .circle {
+        margin-left: 112px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .subheading {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .tags {
+        align-items: start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    html {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+
+    header .highlight {
+        padding: 2px 10px 4px 10px;
+    }
+
+    .circle {
+        margin: 12px 0;
+    }
+
+    article {
+        padding: 24px;
+        margin: 80px 16px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .margin-top {
+        margin-top: 36px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .subheading {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .tags {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .author {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 8px;
+    }
+}
